@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box; /*Hace que todo el contenido sea como una caja, agrega padding y borde, por default es content-box*/
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #204862;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.form-register {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.form-titulo {
+    background: deepskyblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    /*Esto hace un borde redondiado especificando las esquinas*/
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+.contenedor-inputs {
+    padding: 10px 30px;
+    display: flex;/*Esto es para acomodar los inputs y hacerlos flexibles*/
+    flex-wrap: wrap; /*Y esto hace que si se salen del cuadro los acople uno bajo le otro*/
+    justify-content: space-between; /*Espacio entre inputs*/
+}
+
+.input-48 {
+    width: 48%;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.btn-enviar {
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer; /*Para que el cursor sea una manito*/
+    font-size: 20px;
+}
+
+.btn-enviar:active {
+    transform: scale(1.05); /*Al presionar el boton se hará mas grande, un efecto de presionar*/
+}
+
+.form-link {
+    width: 100%; /*Esto es para que quede en una sola linea*/
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
